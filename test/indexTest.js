@@ -1,7 +1,7 @@
 describe('index.js', function () {
-  describe('titleCased()', function () {
-    it('returns an array with title case tutorial names', function () {
-      expect(titleCased()).to.have.all.members(
+  describe('capitalizeSentence()', function () {
+    it('returns an array with proper capitalization', function () {
+      expect(capitalizeSentence()).to.have.all.members(
         [
           'What does the this keyword mean?',
           'What is the Contutorialuctor OO pattern?',

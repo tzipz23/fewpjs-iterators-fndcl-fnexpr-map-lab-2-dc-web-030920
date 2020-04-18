@@ -1,16 +1,16 @@
-const tutorials = [
+const questions = [
   'what does the this keyword mean?',
   'What is the Contutorialuctor OO pattern?',
-  'implementing Blockchain Web API',
-  'The Test Driven Development Workflow',
-  'What is NaN and how Can we Check for it',
+  'how can you implement a Blockchain Web API?',
+  'what is Test Driven Development Workflow?',
+  'What is NaN and how can we check for it?',
   'What is the difference between stopPropagation and preventDefault?',
-  'Immutable State and Pure Functions',
+  'should you use immutable state and pure functions?',
   'what is the difference between == and ===?',
   'what is the difference between event capturing and bubbling?',
   'what is JSONP?'
 ];
 
-const titleCased = () => {
-  return tutorials
+const capitalizeSentence = () => {
+  return questions
 }
