@@ -12,5 +12,5 @@ const questions = [
 ];
 
 const capitalizeSentence = () => {
-
+  return questions
 }
