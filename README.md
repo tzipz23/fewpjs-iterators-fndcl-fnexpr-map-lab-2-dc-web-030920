@@ -19,7 +19,7 @@ understandable functions.
 
 ## Define How the `map()` Method Works
 
-`Array.prototype.map()` is an array method that iterates over all elements,
+`.map()` is an array method that iterates over all elements in an array,
 allowing you to apply a function to each element in that array, and changing
 them into something else. The result is then returned as a *new* array, leaving
 the original array unmodified (but remember, **not** the elements we modify, that
@@ -117,9 +117,7 @@ For the rest of of these examples, we'll use the arrow function.
 ## Demonstrate `map()` With Complex Data Structures
 
 Let's use the `map()` function on a trickier data structure — a list of robots.
-To start things off, we have an array of robots. Now, let's activate all of
-them. An activated robot needs to be marked as such using the `isActivated`
-boolean, as well as have its number of modes doubled:
+To start things off, we have an array of robots. Now, let's create a new array of our robot names, but in all capital letters:
 
 ```js
 const robots = [
@@ -130,26 +128,18 @@ const robots = [
 ];
 
 const activatedRobots = robots.map(function (robot) {
-  return Object.assign({}, robot, {
-    modes: robot.modes * 2,
-    isActivated: true,
-  });
+  return robot.name.toUpperCase()
 });
 
 console.log(activatedRobots);
 
 /*
  Result:
- [
-   { name: 'Johnny 5', modes: 10, isActivated: true },
-   { name: 'C3PO', modes: 6, isActivated: true },
-   { name: 'Sonny', modes: 5, isActivated: true },
-   { name: 'Baymax', modes: 3, isActivated: true }
- ]
+["JOHNNY 5", "C3PO", "SONNY", "BAYMAX"]
 */
 ```
 
-With  the native `map()` function that is a property of `Array`'s prototype,
+With  the native `map()` function that is a property of all arrays,
 it gives us the exact same result! Now that we know how map is implemented,
 it holds no more secrets for us! We can discard our own `map()` function and
 just use the `map()` property on arrays.
