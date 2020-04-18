@@ -156,23 +156,23 @@ just use the `map()` property on arrays.
 
 ## Use `map()` to Generate a New Array
 
-Let's put our newly acquired knowledge of `map()` to use! We just uploaded 10 coding
-tutorials online, but some of them have inconsistent casing. We want all the titles
-to be "title case", in other words, the _first_ letter of each word is capitalized.
-Create a new array with the new names of each tutorial that is in the proper title
+Let's put our newly acquired knowledge of `map()` to use! We have 10 coding
+questions, but some of them have inconsistent casing. We want the _first_ letter
+of each sentence to be capitalized.
+Create a new array with the new questions that are in the proper
 case formatting.
 
-For example, `what does the this keyword mean?` should become `What Does The This Keyword Mean?`.
+For example, `what does the this keyword mean?` should become `What does the this keyword mean?`.
 
 ```js
-const tutorials = [
+const questions = [
   'what does the this keyword mean?',
   'What is the Contutorialuctor OO pattern?',
-  'implementing Blockchain Web API',
-  'The Test Driven Development Workflow',
-  'What is NaN and how Can we Check for it',
+  'how can you implement a Blockchain Web API?',
+  'what is Test Driven Development Workflow?',
+  'What is NaN and how can we check for it?',
   'What is the difference between stopPropagation and preventDefault?',
-  'Immutable State and Pure Functions',
+  'should you use immutable state and pure functions?',
   'what is the difference between == and ===?',
   'what is the difference between event capturing and bubbling?',
   'what is JSONP?'

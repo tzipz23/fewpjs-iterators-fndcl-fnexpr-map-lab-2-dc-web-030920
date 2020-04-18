@@ -3,17 +3,17 @@ describe('index.js', function () {
     it('returns an array with title case tutorial names', function () {
       expect(titleCased()).to.have.all.members(
         [
-          "What Does The This Keyword Mean?",
-          "What Is The Contutorialuctor OO Pattern?",
-          "Implementing Blockchain Web API",
-          "The Test Driven Development Workflow",
-          "What Is NaN And How Can We Check For It",
-          "What Is The Difference Between StopPropagation And PreventDefault?",
-          "Immutable State And Pure Functions",
-          "What Is The Difference Between == And ===?",
-          "What Is The Difference Between Event Capturing And Bubbling?",
-          "What Is JSONP?"
-      ]
+          'What does the this keyword mean?',
+          'What is the Contutorialuctor OO pattern?',
+          'How can you implement a Blockchain Web API?',
+          'What is Test Driven Development Workflow?',
+          'What is NaN and how can we check for it?',
+          'What is the difference between stopPropagation and preventDefault?',
+          'Should you use immutable state and pure functions?',
+          'What is the difference between == and ===?',
+          'What is the difference between event capturing and bubbling?',
+          'What is JSONP?'
+        ]
       )
     });
   });
