@@ -137,6 +137,10 @@ console.log(activatedRobots);
  Result:
 ["JOHNNY 5", "C3PO", "SONNY", "BAYMAX"]
 */
+
+/* Alternative solution:
+const activatedRobots = robots.map(robot => robot.name.toUpperCase() );
+*/
 ```
 
 With  the native `map()` function that is a property of all arrays,
